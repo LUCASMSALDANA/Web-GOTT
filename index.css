@@ -77,11 +77,11 @@ header .container{
 }
 
 #areaMarket{
-  display: grid;
-  width: 90vw;
-  grid-template-columns: 33% 33% 33%;
-  justify-content: center;
-  justify-items: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    justify-items: center;
 }
 
 
