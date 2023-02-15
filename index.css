@@ -84,3 +84,13 @@ header .container{
   justify-content: center;
   justify-items: center;
 }
+
+
+/* --- Footer --- */
+footer{
+    text-align: center;
+    background-color: black;
+    color: #ffca2c;;
+    font-style: italic;
+}
+footer p{margin: 0px;}
