@@ -1,0 +1,86 @@
+/** Configuraciones generales **/
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 1700px;
+    max-height: 400px;
+}
+
+
+/** Configuraciones del Proyecto y elementos **/
+
+/* --- HEADER --- */
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#carritoIcon{
+    width: 50px;
+    height: 50px;
+    transition: 400ms;
+}
+
+#carritoIcon:hover{
+    width: 53px; height: 53px;
+    filter: drop-shadow(0px 0px 5px yellow );
+}
+
+/* --- SLIDER --- */
+
+#carouselGott{
+    background-color: #333;
+}
+
+.carousel-item{
+    height: 400px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    color: #ffca2c;
+}
+.carousel-item .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+/* --- Area de Market --- */
+
+#market{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #555;
+    color: #ffca2c;
+}
+
+#areaMarket{
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  justify-items: center;
+}
