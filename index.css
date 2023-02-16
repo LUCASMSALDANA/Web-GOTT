@@ -74,6 +74,7 @@ header .container{
     text-align: center;
     background-color: #555;
     color: #ffca2c;
+    padding: 20px
 }
 
 #areaMarket{
@@ -82,6 +83,12 @@ header .container{
     grid-template-columns: 33% 33% 33%;
     justify-content: center;
     justify-items: center;
+    margin-top: 20px; margin-bottom: 20px;
+}
+
+#areaMarket .card-body{
+    display: flex;
+    flex-direction: column;
 }
 
 
