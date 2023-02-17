@@ -1,6 +1,14 @@
 let url="https://dummyjson.com/products?limit=3 "; /*Guardamos la url de donde vamos a consumir el recurso*/
+const botonCarrito= document.getElementById("carritoIcon");
+const ito = document.getElementById("carrito")
 
-
+botonCarrito.onclick= ()=>{
+    if(carrito.style.display=="flex"){
+        carrito.style.display="none";
+    }else{
+        carrito.style.display="flex";
+    }
+};
 fetch(url) /* Consumimos una API con productos*/
 .then(res => res.json()) 
 .then(producto=>mostrarProducto(producto.products))
