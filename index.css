@@ -85,6 +85,11 @@ header .container{
     padding: 20px
 }
 
+#market .container{
+    width: 100%;
+    padding: 0;
+}
+
 #areaMarket{
     display: grid;
     width: 100%;
@@ -190,3 +195,20 @@ footer{
     font-style: italic;
 }
 footer p{margin: 0px;}
+
+
+/* !** CSS PARA DISPOSITIVOS MÓVILES **! */
+
+@media(max-width:740px){
+    /* --- Area de Market --- */
+    #areaMarket{
+        grid-template-columns: 100%;      
+    }
+    
+    /* --- Carrito * ---*/
+    #carrito{
+        left: 5%;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+}
