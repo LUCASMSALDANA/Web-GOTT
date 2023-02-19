@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    max-width: 1700px;
+    max-width: 90%;
 }
 
 
@@ -30,7 +30,7 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100%;    
 }
 
 #carritoIcon{
@@ -98,8 +98,8 @@ header .container{
     top: 110px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    width: 600px;
-    height: 300px;
+    width: 650px;
+    height: 320px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px white;
     display: none;
@@ -129,6 +129,7 @@ header .container{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto 0px auto 0px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -140,12 +141,14 @@ header .container{
 
 
 .carrito-card{
-    width: 100%;
-    margin-top: 10px;
+    width: 95%;
+    margin-top: 5px; margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     box-shadow: 0px 0px 3px white;
+    text-align: center;
+    align-items: center;
 }
 
 /* --- Footer --- */
