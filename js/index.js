@@ -1,4 +1,5 @@
 let url="https://dummyjson.com/products?limit=12 "; /*Guardamos la url de donde vamos a consumir el recurso*/
+url="https://api.escuelajs.co/api/v1/products/?categoryId=1&offset=0&limit=9";
 const botonCarrito= document.getElementById("carritoIcon");
 const carrito = document.getElementById("carrito")
 
@@ -12,11 +13,12 @@ botonCarrito.onclick= ()=>{
 
 fetch(url) /* Consumimos una API con productos*/
 .then(res => res.json()) 
-.then(producto=>mostrarProducto(producto.products))
+.then(producto=>mostrarProducto(producto))
 .catch(error=>console.log(error));
 
 
 function mostrarProducto(producto){
+    console.log(producto)
     const areaMarket = document.getElementById("areaMarket")
     for(let i = 0; i<producto.length;i++){
         const card= document.createElement("div")
@@ -24,7 +26,7 @@ function mostrarProducto(producto){
         card.style.width="90%"
         card.innerHTML = `
         <div style="overflow:hidden;">
-            <img style="height: 265px;" src="${producto[i].thumbnail}" class="card-img-top" alt="...">
+            <img style="height: 265px;" src="${producto[i].images[0]}" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
           <h5 class="card-title">${producto[i].title}</h5>
