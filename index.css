@@ -14,6 +14,7 @@ body{
     max-width: 90%;
 }
 
+
 .btn-gott{
     background-color: #ffca2c;
     border-radius: 10px;
@@ -38,17 +39,26 @@ header{
 }
 
 header .container{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;    
 }
 
+#logo-container{
+    z-index: 1;
+}
+
 header nav{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    padding-right: 20px;
-    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 22px;
 }
 
@@ -65,7 +75,7 @@ a:link{
 nav a::after{
     content: '';
     position: absolute;
-    top: calc(100% + 4px);
+    top: calc(100% + 2px);
     left: 50%;
     background-color: #ffca2c;
     width: 0%;
@@ -87,13 +97,14 @@ header a:hover::after{
 
 
 #carritoIcon{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     transition: 400ms;
+    z-index: 1;
 }
 
 #carritoIcon:hover{
-    width: 53px; height: 53px;
+    transform: scale(1.04);
     filter: drop-shadow(0px 0px 5px yellow );
 }
 
@@ -156,7 +167,14 @@ header a:hover::after{
     box-shadow: 10px 10px 10px rgb(20 18 18 / 30%);
     overflow: hidden;
     background-color: #222;
+    transition: 300ms ease-out;
 }
+
+#areaMarket .card:hover{
+    box-shadow: 10px 10px 20px rgb(20 18 18 / 60%);
+    transform: scale(1.04);
+}
+
 #areaMarket .card-img-top{
     transition: 300ms ease-out;
 }
@@ -195,17 +213,18 @@ header a:hover::after{
 #carrito{
     position: fixed;
     right: 10px;
-    top: 110px;
+    top: 90px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     width: 650px;
-    max-height: 375px;
+    max-height: 380px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px lightgoldenrodyellow;
     display: none;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 16;
 }
 
 #titles-carrito{
@@ -232,7 +251,7 @@ header a:hover::after{
     align-items: center;
     margin: auto 0px auto 0px;
     margin-top: 10px;
-    max-height: 212px;
+    max-height: 222px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -279,7 +298,23 @@ footer p{margin: 0px;}
 
 /* !** CSS PARA DISPOSITIVOS MÓVILES **! */
 
+@media(max-width:398px){
+    header nav a{
+        font-size: 20px;
+    }
+}
+
 @media(max-width:740px){
+    /* --- Header --- */
+    header .container{
+        padding: 0;
+    }
+
+    header nav{
+        position: inherit;  
+        gap: 15px;
+    }
+
     /* --- Area de Market --- */
     #areaMarket{
         grid-template-columns: 100%;      
@@ -290,5 +325,11 @@ footer p{margin: 0px;}
         left: 5%;
         width: 90%;
         background-color: rgba(0, 0, 0, 0.95);
+    }
+}
+
+@media(max-width:1080px){
+    #logo-text{
+        display: none;
     }
 }
