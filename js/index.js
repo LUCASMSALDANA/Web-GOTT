@@ -23,7 +23,7 @@ function mostrarProducto(producto){
         card.className="card";
         card.style.width="90%"
         card.innerHTML = `
-        <div style="overflow=hidden">
+        <div style="overflow:hidden;">
             <img style="height: 265px;" src="${producto[i].thumbnail}" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
