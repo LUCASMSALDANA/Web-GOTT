@@ -53,7 +53,7 @@ header .container{
 
 header nav{
     height: 100%;
-    width: 100%;
+    width: 96%;
     position: absolute;
     justify-content: center;
     display: flex;
@@ -213,25 +213,29 @@ header a:hover::after{
 
 /* --- Contacto --- */
 
-#contacto{
+/* #contacto{
     font-family: 'Noto Sans', sans-serif;
     background-image: url(../img/piedra.jpg); 
-  }
+  } */
 
-.contact_form{  
-    width: 460px; 
+#contacto .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
     height: auto;
-    margin: 80px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px; 
-  }
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fbfbfb;
 
-  input{
+}
+
+input{
     background-color: #fbfbfb; 
-    width: 408px; 
+    width: 100%; 
     height: 40px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -240,12 +244,12 @@ header a:hover::after{
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
-  }
+}
   
   
-  textarea{
+textarea{
     background-color: #fbfbfb; 
-    width: 405px; 
+    width: 100%; 
     height: 150px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -255,16 +259,16 @@ header a:hover::after{
     padding-left: 10px;
     margin-bottom: 20px; 
     padding-top: 15px; 
-  }
+}
 
-  label{
+label{
     display: block; 
     float: center;  
-  }
+}
 
-  #contacto span{
+#contacto span{
     color: #ffca2c; 
-  }
+}
   
   
   #contacto .aviso{
@@ -273,27 +277,27 @@ header a:hover::after{
   }
   
   
-  #contacto h1{
+#contacto h1{
     font-size: 39px;  
     text-align: letf; 
     padding-bottom: 20px; 
-    color: #ffca2c;
-  }
+    color: #ffca2c
+}
   
   
-  #contacto h3{
+#contacto h3{
     font-size: 16px; 
     padding-bottom: 30px;
     color: #0e0e0e;   
-  }
+}
   
   
-  #contacto p{
+#contacto p{
     font-size: 14px; 
     color: #0e0e0e; 
-  }
+}
   
-  #enviar{
+#enviar{
     height: 45px; 
     padding-left: 5px;
     padding-right: 5px;  
@@ -302,45 +306,62 @@ header a:hover::after{
     text-transform: uppercase;
     border-style: solid; 
     border-radius: 10px;  
-    width: 420px;   
+    width: 100%;   
     cursor: pointer;
-  }
+}
 
   
-  ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
    color: #a8a8a8;
-  }
+}
   
   
-  ::-webkit-textarea-placeholder {
+::-webkit-textarea-placeholder {
    color: #a8a8a8;
-  }
+}
   
 
-  .formulario input:focus{
+.formulario input:focus{
     outline:0;
     border: 1px solid #97d848;
-  }
+}
   
   
-  .formulario textarea:focus{
+.formulario textarea:focus{
     outline:0;
     border: 1px solid #97d848;
-  }
+}
   
-  .carta-redes{
+.carta-redes{
       display: flex;
-  }
+      justify-content: space-evenly;
+      max-width: 420px;
+}
   
-  .formulario-redes{
-      margin: 30px;
-  }
-  .carta-redes img{
-      width: 25%;
+.formulario-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    font-weight: 600;
+    width: 80%;
+    max-width: 420px;
+}
+
+.carta-redes-container{
+    width: 40%;
+}
+
+
+.carta-redes img{
+      width: 80px;
       height: auto;
       gap: 5px;
       padding: 10px;
-  }
+}
+
+
 
 /* --- Carrito  --- */
 #carrito{
