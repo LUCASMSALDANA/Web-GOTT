@@ -6,7 +6,7 @@ const btnEnviarWap= document.getElementById("enviar");
 
 btnEnviarWap.addEventListener("click",enviarWap);
 
-function enviarWap(e){ 5491165641856
+function enviarWap(e){ 
     let urlWap="https://wa.me/+5491165641856?text=";
     let nombre = document.getElementById("nombre").value;
     let mensaje= document.getElementById("mensaje").value ;
