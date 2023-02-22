@@ -10,7 +10,7 @@ function enviarWap(e){
     let urlWap="https://wa.me/+5491165641856?text=";
     let nombre = document.getElementById("nombre").value;
     let mensaje= document.getElementById("mensaje").value ;
-    let mensajeWap= "hola mi nombre es: "+nombre+". Les envie el siguiente mensaje por la web: "+mensaje;
+    let mensajeWap= "Hola soy *"+nombre+"*.%0ALes envie el siguiente mensaje por la web: %0A%0A*"+mensaje+"*";
 
     mensajeWap=mensajeWap.split(" ").join("%20");
     urlWap+=mensajeWap;
