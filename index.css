@@ -382,10 +382,9 @@ label{
 }
 
 #titles-carrito{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 15% 28% 15% 18% 24%;
     border-bottom: 5px solid #ffca2c;
 }
 
@@ -422,11 +421,13 @@ label{
 
 .carrito-card{
     width: 95%;
-    height: 60px;
     margin-top: 5px; margin-bottom: 5px;
-    display: flex;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 15% 28% 15% 18% 24%;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
     box-shadow: 0px 0px 6px white;
     border-radius: 10px;
     text-align: center;
@@ -435,6 +436,50 @@ label{
 .carrito-card p{
     margin: 10px auto;
 }
+
+.carrito-card-img-container img{ 
+    height: auto;
+    width: 100%;
+    max-width: 60px;
+}
+
+.carrito-btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botones-carrito{
+    padding: 0;
+    text-decoration: none;
+    font-size: 40px;
+    background: transparent;
+    border: none;
+}
+
+.boton-suma{
+    color: green;
+}
+.boton-suma:hover , .boton-resta:hover{
+    transition: 200ms;
+    cursor: default;
+}
+.boton-suma:hover{
+    color: green;
+    filter: drop-shadow(0px 0px 6px lawngreen);
+}
+.boton-resta{
+    color: rgb(255, 0, 0);
+}
+.boton-resta:hover{
+        color: rgb(255, 34, 34);
+        filter: drop-shadow(0px 0px 6px red);
+}
+
+.trashIcon:hover {
+    color: #f00;
+};
+
 
 #compraFinal{
     margin: 10px 0px 10px 0px;

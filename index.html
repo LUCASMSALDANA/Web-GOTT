@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"/>
     <!-- Link al CSS de la página -->
     <link rel="stylesheet" href="index.css">
     <title>GOTT</title>
@@ -106,11 +108,11 @@
                 <p> NO DUDES EN CONTACTARNOS</p>
                 <div class="carta-redes">
                      <div class="carta-redes-container">
-                        <img src="img/whatsapp-logo-1.png" alt="">
-                        <p> +15 54676999</p>
+                        <a href="https://wa.me/+5491157470327"></a><img src="img/whatsapp-logo-1.png" alt="Whatsapp logo">
+                        <p> +54 9 11 6767 9999</p>
                      </div>
                      <div class="carta-redes-container">
-                        <img src="img/instagram.png" alt="">
+                        <a href="https://www.instagram.com/lu.saldana"></a><img src="img/instagram.png" alt="Instagram logo">
                         <p> GOTZ_INDUMENTARIAS</p>
                      </div>       
                 </div>          
@@ -129,43 +131,80 @@
             <p>Descripcion</p>
             <p>Precio</p>
             <p>Cantidad</p>
+            <div></div>
         </div>
         <div id="body-carrito">
             <div id="carrito-card-container">
 
                 <div class="carrito-card">
-                    <p>FOTO</p>
+                    <div class="carrito-card-img-container">
+                      <img src="img/instagram.png" alt="">
+                    </div>
                     <p>Producto 2</p>
                     <p>5.000</p>
                     <p>1</p>
+                    <div class="carrito-btn-container">
+                      <button class="botones-carrito boton-suma">+</button>
+                      <button class="botones-carrito boton-resta">-</button>
+                      <i class="fas fa-trash-alt trashIcon icon"></i>
+                  </div>
                 </div>
 
                 <div class="carrito-card">
-                    <p>FOTO</p>
-                    <p>Producto 3</p>
-                    <p>25.000</p>
-                    <p>1</p>
+                  <div class="carrito-card-img-container">
+                    <img src="img/instagram.png" alt="">
+                  </div>
+                  <p>Producto 2</p>
+                  <p>5.000</p>
+                  <p>1</p>
+                  <div class="carrito-btn-container">
+                    <button class="botones-carrito boton-suma">+</button>
+                    <button class="botones-carrito boton-resta">-</button>
+                    <i class="fas fa-trash-alt trashIcon icon"></i>
+                  </div>
                 </div>
 
-                <div class="carrito-card">
-                    <p>FOTO</p>
-                    <p>Producto 4</p>
-                    <p>33.000</p>
-                    <p>1</p>
+              <div class="carrito-card">
+                <div class="carrito-card-img-container">
+                  <img src="img/instagram.png" alt="">
                 </div>
+                <p>Producto 2</p>
+                <p>5.000</p>
+                <p>1</p>
+                <div class="carrito-btn-container">
+                  <button class="botones-carrito boton-suma">+</button>
+                  <button class="botones-carrito boton-resta">-</button>
+                  <i class="fas fa-trash-alt trashIcon icon"></i>
+                </div>
+              </div>
 
-                <div class="carrito-card">
-                    <p>FOTO</p>
-                    <p>Producto 1</p>
-                    <p>15.000</p>
-                    <p>1</p>
-                </div>
-                <div class="carrito-card">
-                    <p>FOTO</p>
-                    <p>Producto 1</p>
-                    <p>15.000</p>
-                    <p>1</p>
-                </div> 
+            <div class="carrito-card">
+              <div class="carrito-card-img-container">
+                <img src="img/instagram.png" alt="">
+              </div>
+              <p>Producto 2</p>
+              <p>5.000</p>
+              <p>1</p>
+              <div class="carrito-btn-container">
+                <button class="botones-carrito boton-suma">+</button>
+                <button class="botones-carrito boton-resta">-</button>
+                <i class="fas fa-trash-alt trashIcon icon"></i>
+              </div>
+            </div>
+            
+            <div class="carrito-card">
+              <div class="carrito-card-img-container">
+                <img src="img/instagram.png" alt="">
+              </div>
+              <p>Producto 2</p>
+              <p>5.000</p>
+              <p>1</p>
+              <div class="carrito-btn-container">
+                <button class="botones-carrito boton-suma">+</button>
+                <button class="botones-carrito boton-resta">-</button>
+                <i class="fas fa-trash-alt trashIcon icon"></i>
+              </div>
+            </div>
                 
             </div>
           <button id="compraFinal" class="btn-gott">COMPRAR</button>
