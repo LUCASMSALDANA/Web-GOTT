@@ -1,7 +1,21 @@
 let url="https://dummyjson.com/products?limit=12 "; /*Guardamos la url de donde vamos a consumir el recurso*/
 url="https://api.escuelajs.co/api/v1/products/?categoryId=1&offset=0&limit=9";
 const botonCarrito= document.getElementById("carritoIcon");
-const carrito = document.getElementById("carrito")
+const carrito = document.getElementById("carrito");
+const btnEnviarWap= document.getElementById("enviar");
+
+btnEnviarWap.addEventListener("click",enviarWap);
+
+function enviarWap(e){ 5491165641856
+    let urlWap="https://wa.me/+5491165641856?text=";
+    let nombre = document.getElementById("nombre").value;
+    let mensaje= document.getElementById("mensaje").value ;
+    let mensajeWap= "hola mi nombre es: "+nombre+". Les envie el siguiente mensaje por la web: "+mensaje;
+
+    mensajeWap=mensajeWap.split(" ").join("%20");
+    urlWap+=mensajeWap;
+    window.open(urlWap,"_blank")
+}
 
 botonCarrito.onclick= ()=>{
     if(carrito.style.display=="flex"){
@@ -18,7 +32,6 @@ fetch(url) /* Consumimos una API con productos*/
 
 
 function mostrarProducto(producto){
-    console.log(producto)
     const areaMarket = document.getElementById("areaMarket")
     for(let i = 0; i<producto.length;i++){
         const card= document.createElement("div")

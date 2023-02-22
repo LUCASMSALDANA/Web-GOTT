@@ -8,6 +8,7 @@ html{
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -209,7 +210,139 @@ header a:hover::after{
     background-color: green;
 }
 
-/* --- Carrito * ---*/
+
+/* --- Contacto --- */
+
+#contacto{
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(../img/piedra.jpg); 
+  }
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+  }
+
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ffca2c; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ffca2c; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+
+  label{
+    display: block; 
+    float: center;  
+  }
+
+  #contacto span{
+    color: #ffca2c; 
+  }
+  
+  
+  #contacto .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  #contacto h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #ffca2c;
+  }
+  
+  
+  #contacto h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  #contacto p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  
+  #enviar{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;  
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  .carta-redes{
+      display: flex;
+  }
+  
+  .formulario-redes{
+      margin: 30px;
+  }
+  .carta-redes img{
+      width: 25%;
+      height: auto;
+      gap: 5px;
+      padding: 10px;
+  }
+
+/* --- Carrito  --- */
 #carrito{
     position: fixed;
     right: 10px;
