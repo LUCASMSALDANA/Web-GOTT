@@ -1,3 +1,6 @@
+/* IMPORTACIONES */
+import { agregar_carrito, actualizarCarrito, finalizarCompra} from "./carrito.js"
+
 let url="https://dummyjson.com/products?limit=12 "; /*Guardamos la url de donde vamos a consumir el recurso*/
 url="https://api.escuelajs.co/api/v1/products/?categoryId=1&offset=0&limit=9";
 const botonCarrito= document.getElementById("carritoIcon");
@@ -25,6 +28,8 @@ botonCarrito.onclick= ()=>{
     }
 };
 
+actualizarCarrito();
+
 fetch(url) /* Consumimos una API con productos*/
 .then(res => res.json()) 
 .then(producto=>mostrarProducto(producto))
@@ -45,11 +50,11 @@ function mostrarProducto(producto){
           <h5 class="card-title">${producto[i].title}</h5>
           <p class="card-text">${producto[i].description} </p>
           <span class="precio">${producto[i].price}</span>  
-          <a href="#carrito" class="btn btn-primary btn-gott">Comprar</a>
+          <a href="#carrito" class="btn btn-primary btn-gott" id=>Comprar</a>
         </div>
          `; 
         areaMarket.append(card);
-        // let botonCompra=card.querySelector(".botonCompra")
-        // botonCompra.addEventListener("click",agregar_carrito);
+        let botonCompra=card.querySelector(".btn-gott")
+        botonCompra.addEventListener("click",agregar_carrito);
     }
 }
