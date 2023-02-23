@@ -384,9 +384,11 @@ label{
 #titles-carrito{
     width: 90%;
     display: grid;
+    justify-content: center;
     grid-template-columns: 15% 28% 15% 18% 24%;
     border-bottom: 5px solid #ffca2c;
 }
+
 
 #body-carrito{
     display: flex;
@@ -407,6 +409,7 @@ label{
     max-height: 222px;
     overflow: hidden;
     overflow-y: scroll;
+    padding: 0;
 }
 
 #carrito-card-container::-webkit-scrollbar{
@@ -425,17 +428,17 @@ label{
     padding: 5px;
     display: grid;
     grid-template-columns: 15% 28% 15% 18% 24%;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around; */
     box-shadow: 0px 0px 6px white;
     border-radius: 10px;
     text-align: center;
     align-items: center;
 }
+
 .carrito-card p{
-    margin: 10px auto;
+    width: 100%;
+    margin: 11px auto;
 }
+
 
 .carrito-card-img-container img{ 
     height: auto;

@@ -45,7 +45,7 @@ export function actualizarCarrito(){  /*Le cambie el nombre a la funcion (antes 
         let card = document.createElement("div");
         card.classList.add("carrito-card")
         card.innerHTML = `<div class="carrito-card-img-container">
-                            <img src="${producto.img}" alt="">
+                            <img src="${producto.img    }" alt="">
                             </div>
                             <p>${producto.nombre}</p>
                             <p>${producto.precio}</p>
